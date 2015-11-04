@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc" tools:context=".ImageCapture">
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Take Picture"
+            android:id="@+id/takePicBtn"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="2dp"
+            android:background="@color/accent_material_light" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="346dp"
+            android:id="@+id/ImageView"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Edit Image"
+            android:id="@+id/editPicBtn"
+            android:layout_gravity="right|top"
+            android:padding="2dp"
+            android:background="@color/accent_material_light" />
+    </FrameLayout>
+
+</FrameLayout>
